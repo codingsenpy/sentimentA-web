@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gridcontainer{
+            border: solid 5px green;
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px;
+        }
+        .gridcontainer div{
+            border: solid red;
+        }
+        .item1{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item2{
+            grid-area: 2/1/2/5;
+            z-index: 1;
+            /* background-color: aqua; */
+        }
+        .item3{
+            grid-area: 2/4/3/5;
+        }
+        .item4{
+            grid-area: 4/1/6/3;
+        }
+        .item5{
+            grid-area: 4/3/5/4;
+        }
+        .item6{
+            grid-area: 5/3/5/5;
+        }
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item1"><h1>Lorem ipsum</h1></div>
+        <div class="item2"><input type="text" id="searchinput"style="width: 290px; line-height:"1000px"></div>
+        <div class="item3"><button onclick="search()"><i class="fa fa-search" style="height: 90px; width: 80px; font-size: 75px;" ></i></button></div>
+        <div class="item4"></div>
+        <div class="item5">mkbhd new video</div>
+        <div class="item6">6</div>
+    </div>
+</body>
+</html>

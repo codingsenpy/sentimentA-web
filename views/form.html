@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="field">
+        <label for="category">Select Category</label>
+        <select>
+            <option value="tech">Tech</option>
+            <option value="food">Food</option>
+            <option value="travel">Travel</option>
+        </select>
+        <button onclick="submit()">Sumbit</button>
+    </form>
+    <script>
+        const field=document.getElementById("field")
+        const submit=()=>{
+            const f=field.value
+            field.value=""
+            console.log(f)
+        }
+    </script>
+</body>
+</html>
